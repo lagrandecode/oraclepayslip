@@ -1,6 +1,24 @@
-.h1{
-    color: brown;
-}
 *{
-    color: bisque;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: inline;
+  
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+
+}
+
