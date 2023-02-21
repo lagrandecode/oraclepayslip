@@ -15,7 +15,8 @@ li{
   
 }
 .logo{
-    
+    color: red;
+
 }
 .container{
     display: flex;
