@@ -31,9 +31,14 @@ li{
     cursor: pointer;
 }
 .button:hover{
-    color: red;
+    background-color: red;
 }
 .tr{
     padding: 20px;
     margin: 20px;
+}
+.tableclass{
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
