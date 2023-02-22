@@ -26,12 +26,10 @@ li{
     background-color: teal;
 
 }
-.container2{
-    padding: 20px;
+
+.button{
+    cursor: pointer;
 }
-tr{
-    padding: 50px;
-}
-.table{
-    padding: 100px;
+.button:hover{
+    color: red;
 }
