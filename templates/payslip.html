@@ -6,9 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payslip</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
-<body>
-    <img style="width: 100px;height: 100px;" src="{% static 'logo.jpeg' %}" alt="logo">
+<body class="payslipclass">
+    <div class="header">
+        <hr>
+        <h1><img style="width: 100px;height: 100px;" src="{% static 'C:\Users\OLUWASEUN\Desktop\project\oraclepayslip\static\logo.jpeg' %}" alt="logo"></h1>
+        <h1 style="color: blue;margin-top: 20px;font-family: 'Labrada', serif">Payslip</h1>
+       
+        <hr>
+    </div>
+    <div class="info" style="padding-top: 5px;margin: 20px;">
+        <h1 style="font-family: 'Labrada', serif">name: {{pay.first_name}}</h1>
+        <h1 style="font-family: 'Labrada', serif">email: {{pay.email}}</h1>
+        <h1 style="font-family: 'Labrada', serif">Work Hour: {{pay.hour}}</h1>
+        <hr style="color: red;">
+        <h1 style="color: red;font-family: 'Labrada', serif">{{pay.gross_salary}}</h1>
+        <hr style="color: red;">
+    </div>
+
     
 </body>
 </html>

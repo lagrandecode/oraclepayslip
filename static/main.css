@@ -50,3 +50,22 @@ li{
     align-items: center;
 
 }
+.header{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.header.textlogo{
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.info{
+    padding: 20px;
+    margin: 20px;
+}
+.payslipclass{
+    size: a4;
+    background-image: url('https://nigerianguide.com.ng/wp-content/uploads/2021/12/Lagos-State-Coat-Of-Arms.jpeg');
+}
