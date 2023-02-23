@@ -11,6 +11,7 @@
  
 </head>
 <body>
+
     <div class="container">
         
             <h1 class="logo">Payslip Design</h1>
@@ -24,29 +25,44 @@
 
     <div class="tableclass" id="tableclass">
         <table class="table">
+            
             <div class="container2">
                 <tr class="tr">
+                    <th style="background-color: green;padding: 20px;">
+                        Position
+                    </th>
                     <th style="background-color: aqua;padding: 20px;">
-                        first name
+                        First name
                     </th>
                     <th style="background-color: blue;padding: 20px;">
-                        last name
+                        Last name
                     </th>
                     <th style="background-color: red;padding: 20px;">
                         View Payslip
                     </th>
     
                 </tr>
+                {% for i in getstaff %}
     
                 <tr>
-                    <td>John</td>
-                    <td>Emmanuel</td>
-                    <td><button style="padding: 20px;" class="button">View Payslip</button></td>
+                    <td style="background-color: aliceblue;padding: 5px;">{{i.grade_status.positon}}</td>
+            
+                    <td style="background-color: aliceblue;padding: 5px;">{{i.first_name}}</td>
+                
+                    <td style="background-color: aliceblue;padding: 5px;">{{i.last_name}}</td>
+               
+                    <td style="background-color: aliceblue;padding: 5px;"><button style="padding: 5px; border-width: 0;" class="button">View Payslip</button></td>
+                
+
                 </tr>
+                {% endfor %}
+                
             </div>
+            
 
         </table>
     </div>
+    
         
     
 </body>
