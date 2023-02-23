@@ -23,8 +23,12 @@ def home(request):
 def payslip(request,pk):
     pay = staff.objects.get(id=pk)
     template_path = 'payslip.html'
+    logo = finders.find('logo.jpeg')
     context = {
-        'pay':pay
+        'pay':pay,
+        'static':{
+        'logo':logo
+        },
     }
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'filename="report.pdf"'
