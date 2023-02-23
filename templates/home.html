@@ -51,7 +51,7 @@
                 
                     <td style="background-color: aliceblue;padding: 5px;">{{i.last_name}}</td>
                
-                    <td style="background-color: aliceblue;padding: 5px;"><button style="padding: 5px; border-width: 0;" class="button">View Payslip</button></td>
+                    <td style="background-color: aliceblue;padding: 5px;"><a href="{% url 'payslip' i.id %}"><button style="padding: 5px; border-width: 0;background-color: rgb(41, 41, 255);" class="button">View Payslip</button></a></td>
                 
 
                 </tr>

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Labrada', serif;
 }
 ul{
     list-style: none;
@@ -33,20 +36,17 @@ li{
 }
 .button:hover{
     background-color: red;
+    color: red;
 }
 .tr{
     padding: 20px;
     margin: 20px;
 }
-.tableclass{
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
+/*  */
 .table{
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    border: 3px solid green;
+
 }
