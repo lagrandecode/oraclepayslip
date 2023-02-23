@@ -11,3 +11,11 @@ def home(request):
     }
     return render(request,'home.html',context)
 
+
+def payslip(request,pk):
+    pay = staff.objects.get(id=pk)
+    context = {
+        'pay':pay
+    }
+    return render(request,'payslip.html',context)
+
