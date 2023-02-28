@@ -40,7 +40,7 @@ def payslip(request,pk):
     if pisa_status.err:
        return HttpResponse('We had some errors <pre>' + html + '</pre>')
     return response
-
+#This code will convert the HTML to PDF
 
 
 
