@@ -8,7 +8,8 @@ class Grade(models.Model):
 
     def __str__(self):
         return self.positon
-
+    class Meta:
+        verbose_name_plural = "Grade"
 
 class staff(models.Model):
     first_name = models.CharField(max_length=250)
