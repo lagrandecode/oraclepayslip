@@ -26,5 +26,5 @@ class staff(models.Model):
     def __str__(self):
         return self.first_name
         
-    def verbose_name_plural:
-        return "Staff"
+    class Meta:
+        verbose_name_plural = "Staff"
